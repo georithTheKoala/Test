@@ -1,0 +1,25 @@
+.sidebar {
+    flex-grow: 1;
+    background-color: #888888;
+    color:white;
+    height: 100vh;
+  }
+  
+.sidebar-collapse {
+    transition: 0.6s all ease-in-out;
+}
+
+span.notification {
+    margin: 5px 10px;
+    padding: 0 5px;
+    font-size: 12px;
+    color: blue;
+    border: solid 1px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+@media (max-width: 600px){
+	.sidebar .sidebar-collapse {
+		overflow: hidden;
+	}
+}
