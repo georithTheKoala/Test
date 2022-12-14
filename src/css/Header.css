@@ -1,36 +1,72 @@
+
+header {
+	display: inline;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
 nav {
 	position: fixed;
-  	top:0;
-	box-shadow: 0px 13px 25px 0px rgba(0,0,0, 0.2);
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+	width: 100%;
+	top: 0;
+	box-shadow: 0px 13px 25px 0px rgba(0,0,0,);
+	overflow: visible;
+	background: #dddddd;
+	padding: 0.75em 0;
 }
 
-nav .navbar-collapse.collapse {
-	display: block;
+.menu {
+	display: inline-block;
+	list-style-type: none;
+	padding: .5em;
 }
 
-nav .navbar-collapse {
-	transition: 0.6s all ease-in-out;
-	height: 0 !important;
+.sidebar-toggler {
+	margin-top: 0;
 }
 
-@media (max-width: 600px){
-	nav .navbar-collapse {
-		overflow: hidden;
+.menu > li {
+	font-size: 20px;
+}
+
+.menu > li > a {
+	text-decoration: none;
+	max-width: 64px;
+	color:black;
+}
+
+#hamburger {
+	max-width: 64px;
+	max-height: 64px;
+	cursor: pointer;
+	background-color : #dddddd;
+	border: solid 2px;
+	border-radius: 4px;
+	margin-right: 10px;
+}
+
+#icon {
+	font-size: 20px;
+	padding: 0 10px;
+}
+
+@media (max-width: 800px){
+	nav {
+		padding: 0.85rem;
 	}
 
-	nav .navbar-collapse.active {
-		height: 50vh !important;
+	.menu > li {
+		font-size: 16px;
 	}
 }
 
-@media (max-width:988px){
-	nav .navbar-collapse {
-		overflow: hidden;
+@media (max-width: 1015px){
+    nav {
+		padding: 0.85rem;
 	}
 
-	nav .navbar-collapse.active {
-		height: 18vh !important;
+	.menu > li {
+		font-size: 18px;
 	}
 }
+
